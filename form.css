@@ -1,0 +1,151 @@
+input[type="text"],
+input[type="email"],
+input[type="data"],
+textarea {
+    padding: 5px 0;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: rgba(255, 255, 255, -0.5);
+}
+
+* {
+    margin: 0px;
+
+}
+
+.info {
+    margin: 0 auto;
+    width: 786px;
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1060px;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 2px;
+    background-color: black;
+    bottom: -5px;
+    left: 39%;
+}
+
+h1 {
+    color: red;
+    margin: 20px;
+
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.ten_vo,
+.ten_chong {
+    margin: 20px;
+}
+
+.info dl {
+    background-color: #f3f3f3;
+    padding: 10px 30px 15px;
+}
+
+.info dl dt {
+    font-weight: 600;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.info dl dd {
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.info p {
+    text-align: center;
+}
+
+.info p button {
+    background-color: #666;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    height: 36px;
+    text-align: center;
+    width: 100px;
+}
+
+.thong_tin {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+label {
+    float: left;
+    padding: 10px;
+}
+
+.footer {
+    padding: 40px 40px 10px 40px;
+    margin-left: 30px;
+}
+
+.ki {
+    display: flex;
+    column-gap: 60px;
+    justify-content: space-around;
+    margin-left: 66px;
+    margin-right: 41px;
+    text-align: center;
+
+}
+
+.chot {
+    float: right;
+    margin: 20px 24px 20px 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .info {
+        max-width: 600px;
+        width: auto;
+    }
+
+    .thong_tin {
+        display: block;
+    }
+
+    .info dl {
+        padding: 10px 20px 15px;
+    }
+
+    .info p button {
+        width: 50%;
+        min-width: 200px;
+    }
+}
